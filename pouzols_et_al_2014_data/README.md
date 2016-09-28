@@ -95,12 +95,7 @@ Technical details of the raster data:
 ### 6. Run info file
 
 `data/*/*.run_info.txt` is a log file. The content of the
-.run_info.txt file is identical to that of the .txt file.
-
-### 7. Machine-readable metadata
-
-`datapackage.json` contains data set metadata in machine-readable JSON file.
-This file follows Open Knowledge Foundation's data package specification [3].  
+.run_info.txt file is identical to that of the .txt file.  
 
 
 ## PROVENANCE INFORMATION
