@@ -1,5 +1,3 @@
-## DATA SET
-
 Name: cbig_gpan_r15  
 Version: 1.0.0  
 Date-created: 2016-09-28
@@ -123,6 +121,7 @@ rm -r Data/pouzols_et_al_2014_data/redist_reload_antarctica_out_0A002_abf_admu_2
 cp -r Data/DATAPART1/Zprojects/GNoTPA-expansion/GNoTPA_output_admu/redist_reload_antarctica_out_0A102_abf_admu_2040_ecor/ Data/pouzols_et_al_2014_data/
 rm -r Data/pouzols_et_al_2014_data/redist_reload_antarctica_out_0A102_abf_admu_2040_ecor/redist_reload_antarctica_out_0A102_abf_admu_2040_ecor.CAZ_MDE.rank.per_ADMU_outputs/
 ```
+2. See [Snakefile](Snakefile) for additional processing steps.
 
 ## DESCRIPTION OF THE ANALYSES
 
