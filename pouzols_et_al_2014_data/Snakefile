@@ -6,10 +6,10 @@ IN_DATASETS = ['antarctica_out_002_abf_noadmu_2000_ecor',
                'antarctica_out_102_abf_noadmu_2040_ecor',
                'redist_reload_antarctica_out_0A102_abf_admu_2040_ecor']
 
-OUT_DATASETS = ['cbig_gpan_global2000_r15',
-                'cbig_gpan_nationa2000_r15',
-                'cbig_gpan_global2040_r15',
-                'cbig_gpan_nationa2040_r15']
+OUT_DATASETS = ['cbig_gpan_global2000_r16',
+                'cbig_gpan_nationa2000_r16',
+                'cbig_gpan_global2040_r16',
+                'cbig_gpan_nationa2040_r16']
 
 DATASETS_EXT = ['rank.compressed.tif', 'curves.txt', 'features_info.txt',
                 'grp_curves.txt', 'png', 'run_info.txt']
