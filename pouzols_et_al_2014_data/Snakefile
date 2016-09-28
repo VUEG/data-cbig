@@ -1,0 +1,36 @@
+import glob
+import os
+
+IN_DATASETS = ['antarctica_out_002_abf_noadmu_2000_ecor',
+               'redist_reload_antarctica_out_0A002_abf_admu_2000_ecor',
+               'antarctica_out_102_abf_noadmu_2040_ecor',
+               'redist_reload_antarctica_out_0A102_abf_admu_2040_ecor']
+
+OUT_DATASETS = ['cbig_gpan_global2000_r15',
+                'cbig_gpan_nationa2000_r15',
+                'cbig_gpan_global2040_r15',
+                'cbig_gpan_nationa2040_r15']
+
+DATASETS_EXT = ['rank.compressed.tif', 'curves.txt', 'features_info.txt',
+                'grp_curves.txt', 'png', 'run_info.txt']
+
+rule all:
+  input:
+    expand("data/{dataset}/{dataset}.{ext}", dataset=OUT_DATASETS,
+           ext=DATASETS_EXT)
+
+rule copy_data:
+    input:
+        expand("org/{dataset}/{dataset}.CAZ_MDE.{ext}", dataset=IN_DATASETS,
+               ext=DATASETS_EXT)
+    params:
+        data_dir="data/wood_productions_maps"
+    output:
+        rules.all.input
+    log:
+        "log/copy_data.log"
+    message:
+        "Copying files"
+    run:
+        for i, datafile in enumerate(input):
+            shell("cp {0} {1} >& {2}".format(datafile, output[i], log))
