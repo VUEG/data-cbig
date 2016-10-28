@@ -101,7 +101,7 @@ Technical details of the raster data:
 ## PROVENANCE INFORMATION
 
 resource: pouzols_et_al_2014_data.tar.gz
-retrieved_from: cbig-arnols
+retrieved_from: cbig-arnold
 retrieved_date: 2016-09-28
 retrieved_by: Joona Lehtomäki <joona.lehtomaki@gmail.com>
 modified_date: 2016-09-284
